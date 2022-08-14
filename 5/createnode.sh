@@ -68,7 +68,7 @@ if [ -f $FILE ]; then
 else
         cd ~/.near
         near generate-key $NEAR_POOL
-        cp ~/.near-credentials/shardnet/$NEAR_POOL ~/.near/validator_key.json
+        cp ~/.near-credentials/shardnet/$NEAR_POOL.json ~/.near/validator_key.json
         sed -i 's/private_key/secret_key/g' ~/.near/validator_key.json
         tar caf ~/$NEAR_POOL.tar.zstd *key*.json
 fi
@@ -80,7 +80,7 @@ sudo ufw allow 3000
 sudo apt -y purge libnode-dev libnode72
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo chmod 644 /usr/share/keyrings/nodesource.gpg
-sudo apt update
+sudo apt -y update
 sudo apt install -y nodejs
 
 npm -g install near-cli
