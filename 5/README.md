@@ -21,7 +21,7 @@ sudo reboot
 
 And then login to the user account with that password.  Now do in order:
 
-1. Edit pool_name in createnode.sh to your to be moniker for both the signing wallet & pool.
+1. Edit pool_name in createnode.sh to your-to-be moniker for both the signing wallet & validator pool.
 
 2. Run:
 
@@ -29,7 +29,7 @@ And then login to the user account with that password.  Now do in order:
 ./createnode.sh
 ```
 
-This will compile, install, initialize, autostart and autorun 24/7 a new NEAR node plus NEAR-CLI plus node monitoring tools (accessible via browser at http://yourserverIP:3000).
+This will compile, install, initialize, autostart and autorun 24/7 a new NEAR node, plus install NEAR-CLI, plus install node monitoring tools (accessible via browser at http://yourserverIP:3000).
 
 3. Once the node is fully synced, create a signing wallet for NEAR-CLI using this exact format "poolnamemoniker.shardnet.near" (without quotes) at https://wallet.shardnet.near.org/.  Once that is done the keypair needs to be downloaded to your server via:
 
