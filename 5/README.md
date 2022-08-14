@@ -27,7 +27,7 @@ And then login to the user account with that password.  Now do in order:
 2. Run:
 
 ```
-./near-initnode.sh
+./createnode.sh
 ```
 
 This will compile, install, initialize, autostart and autorun 24/7 a new NEAR node plus NEAR-CLI plus node monitoring tools (accessible via browser at http://yourserverIP:3000).
