@@ -1,7 +1,6 @@
 SUPER QUICK NEAR NODE INSTALLATION FOR UBUNTU
 
-Once you've purchased your VPS/VDS/DS and logged into root via SSH, set the name below of the user account that will be created and subsequently 
-logged into.  Then copy and paste into the console:
+Once you've purchased your VPS/VDS/DS and logged into root via SSH, set the name below of the user account that will be created and subsequently logged into.  Then copy and paste into the console:
 
 ```
 USERNAME=yourusernamehere
@@ -32,18 +31,15 @@ And then login to the user account with that password.  Now do in order:
 
 This will compile, install, initialize, autostart and autorun 24/7 a new NEAR node plus NEAR-CLI plus node monitoring tools (accessible via browser at http://yourserverIP:3000).
 
-3. Once the node is fully synced, create a signing wallet for NEAR-CLI using this exact format "poolnamemoniker.shardnet.near" (without quotes)
-at https://wallet.shardnet.near.org/.  Once that is done the keypair needs to be downloaded to your server via:
+3. Once the node is fully synced, create a signing wallet for NEAR-CLI using this exact format "poolnamemoniker.shardnet.near" (without quotes) at https://wallet.shardnet.near.org/.  Once that is done the keypair needs to be downloaded to your server via:
 
 ```
 near login
 ```
 
-Copy the URL given and paste it into your browser.  Grant full access to NEAR-CLI in the resulting popup.  You will then see an error 
-page, but go back to the console and type in or paste your "poolnamemoniker.shardnet.near" (without quotes) signing wallet.
+Copy the URL given and paste it into your browser.  Grant full access to NEAR-CLI in the resulting popup.  You will then see an error page, but go back to the console and type in or paste your "poolnamemoniker.shardnet.near" (without quotes) signing wallet.
 
-4. Edit createpool.sh and insert your validator's full public key (cat ~/.near/validator_key.json) where indicated.  Edit AMOUNT 
-with how much you want to stake initially (ideally, above the next epoch's seat price).  It will cost 30 NEAR to create the pool, plus 
+4. Edit AMOUNT in createpool.sh with how much you want to stake initially (ideally, above the next epoch's seat price).  It will cost 30 NEAR to create the pool, plus 
 gas, plus your stake amount.  Then run:
 
 ```
