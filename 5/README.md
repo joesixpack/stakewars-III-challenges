@@ -22,11 +22,9 @@ sudo reboot
 
 And then login to the user account with that password.  Now do in order:
 
-1. Edit pool_name in near-init.sh to your to be signing wallet & pool name moniker.
+1. Edit pool_name in createnode.sh to your to be signing wallet & pool name moniker.
 
-2. Edit neard.service and set the correct paths to your user account.
-
-3. Run:
+2. Run:
 
 ```
 ./near-initnode.sh
@@ -34,7 +32,7 @@ And then login to the user account with that password.  Now do in order:
 
 This will compile, install, initialize, autostart and autorun 24/7 a new NEAR node plus NEAR-CLI plus node monitoring tools (accessible via browser at http://yourserverIP:3000).
 
-4. Once the node is fully synced, create a signing wallet for NEAR-CLI using this exact format "poolnamemoniker.shardnet.near" (without quotes)
+3. Once the node is fully synced, create a signing wallet for NEAR-CLI using this exact format "poolnamemoniker.shardnet.near" (without quotes)
 at https://wallet.shardnet.near.org/.  Once that is done the keypair needs to be downloaded to your server via:
 
 ```
@@ -44,7 +42,7 @@ near login
 Copy the URL given and paste it into your browser.  Grant full access to NEAR-CLI in the resulting popup.  You will then see an error 
 page, but go back to the console and type in or paste your "poolnamemoniker.shardnet.near" (without quotes) signing wallet.
 
-5. Edit createpool.sh and insert your validator's full public key (cat ~/.near/validator_key.json) where indicated.  Edit AMOUNT 
+4. Edit createpool.sh and insert your validator's full public key (cat ~/.near/validator_key.json) where indicated.  Edit AMOUNT 
 with how much you want to stake initially (ideally, above the next epoch's seat price).  It will cost 30 NEAR to create the pool, plus 
 gas, plus your stake amount.  Then run:
 
