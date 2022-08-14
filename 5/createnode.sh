@@ -1,6 +1,7 @@
 #!/bin/bash
 
 pool_name=enterpoolnamehere
+username=enterusernamehere
 
 #######
 
@@ -41,7 +42,25 @@ rm -rf ~/.near/
 wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/config.json
 wget -O ~/.near/genesis.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/genesis.json
 
-sudo cp ~/neard.service /etc/systemd/system
+sudo echo "[Unit]
+Description=NEARd Daemon Service
+
+[Service]
+Environment="RUST_LOG=network=info,chain=info,actix_web=info"
+Environment="NEAR_ENV=shardnet"
+Type=simple
+User=$username
+#Group=near
+WorkingDirectory=/home/$username/.near
+ExecStart=/home/$username/nearcore/target/release/neard run
+Restart=on-failure
+RestartSec=30
+KillSignal=SIGINT
+TimeoutStopSec=45
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/neard.service
 sudo systemctl daemon-reload
 sudo systemctl enable neard
 
