@@ -1,6 +1,6 @@
 SUPER QUICK NEAR NODE INSTALLATION FOR UBUNTU
 
-Once you've purchased your VPS/VDS/DS and logged into root via SSH, set the name below of the user account that will be created and subsequently logged into.  Then copy and paste into the console:
+Once you've purchased your high quality VDS/DS and logged into root via SSH, set the name below of the user account that will be created and subsequently logged into.  Then copy and paste into the console:
 
 ```
 USERNAME=yourusernamehere
