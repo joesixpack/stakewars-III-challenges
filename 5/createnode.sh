@@ -1,7 +1,6 @@
 #!/bin/bash
 
 pool_name=enterpoolnamehere
-username=enterusernamehere
 
 #######
 
@@ -49,10 +48,10 @@ Description=NEARd Daemon Service
 Environment="RUST_LOG=network=info,chain=info,actix_web=info"
 Environment="NEAR_ENV=shardnet"
 Type=simple
-User=$username
+User=$USER
 #Group=near
-WorkingDirectory=/home/$username/.near
-ExecStart=/home/$username/nearcore/target/release/neard run
+WorkingDirectory=/home/$USER/.near
+ExecStart=/home/$USER/nearcore/target/release/neard run
 Restart=on-failure
 RestartSec=30
 KillSignal=SIGINT
