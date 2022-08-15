@@ -8,7 +8,7 @@ cd ~
 
 source ~/.profile
 
-sudo apt install -y jq ufw npm build-essential make git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ python3 docker-ce protobuf-compiler libssl-dev pkg-config llvm clang python3-pip
+sudo apt install -y bc jq ufw npm build-essential make git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ python3 docker-ce protobuf-compiler libssl-dev pkg-config llvm clang python3-pip
 sudo apt purge -y cargo* rust* nodejs npm
 
 sudo ufw allow 24567
