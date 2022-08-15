@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pool_name=enterpoolnamehere
+pool_name=enterwalletandpoolnamemonikerhere
 
 #######
 
