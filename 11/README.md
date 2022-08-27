@@ -6,6 +6,10 @@ Platform-Owned Liquidity
 
 Issue all rewards as discounted bonds (in exchange for LP tokens, stablecoins and/or tokens) -- vesting the rewards over a period of time to prevent arbitration.  This will also eliminate impermanent loss for those providing liquidity.  To mitigate death spiral issues from self-reinforcing panic selling, the rewards must be allowed to be single-side stakable at a commensurate APY to act as an effective token sink.
 
+Platform-Boost
+
+Grant reward hodlers the ability to boost-lock their tokens for a set duration in exchange for a larger share (multiplier) of the platform rewards.
+
 Platform-Governance
 
 Grant reward hodlers the ability to participate in governance voting via vote-locking.  Such hodlers earn more rewards by committing their tokens to strictly voting for a set time period of time and actively participate in proposal votes or by creating proposals.
