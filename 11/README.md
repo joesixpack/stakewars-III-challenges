@@ -8,7 +8,7 @@ Issue all rewards as discounted bonds (in exchange for LP tokens, stablecoins an
 
 Platform-Governance
 
-Grant reward hodlers the ability to participate in governance voting via vote-locking.  Such hodlers earn more rewards by committing their tokens to strictly voting for a set time period of time and actively participate in proposal votes.
+Grant reward hodlers the ability to participate in governance voting via vote-locking.  Such hodlers earn more rewards by committing their tokens to strictly voting for a set time period of time and actively participate in proposal votes or by creating proposals.
 
 Platform-Stability
 
