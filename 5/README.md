@@ -1,4 +1,4 @@
-SUPER QUICK NEAR VALIDATOR NODE INSTALLATION FOR UBUNTU
+SUPER EASY NEAR VALIDATOR NODE INSTALLATION FOR UBUNTU
 
 Once you've purchased your high quality VDS/DS and logged into the root account via SSH, edit the USERNAME below to the user account that will be created and subsequently logged into.  Then copy and paste into the console:
 
