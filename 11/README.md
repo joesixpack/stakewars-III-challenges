@@ -1,6 +1,6 @@
 A PRACTICAL PROPOSAL FOR STAKING FARM V2
 
-Current liquidity mining incentives kickstarted by Compound during the DeFi Summer of 2020 suffer from a short-term incentivization of "liquidity locusts" -- temporary "farmers" that just rape farms and jump ship when the proverbial well runs dry.  There is no long-term loyalty or agency to the platform.  Here's several practical solutions to make the APY rewards sustainable (inclusive of the platform token, as well as non-platform tokens listed on the platform in some special cases):
+Current liquidity mining incentives kickstarted by Compound during the DeFi Summer of 2020 suffer from a short-term incentivization of "liquidity locusts" -- temporary "farmers" that just rape farms and jump ship when the proverbial well runs dry.  There is no long-term loyalty or agency to the platform.  Below are several practical solutions to make the APY rewards sustainable (inclusive of the platform token, as well as non-platform tokens listed on the platform in some special cases):
 
 Platform-Owned Liquidity
 
