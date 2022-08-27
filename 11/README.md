@@ -18,4 +18,4 @@ Grant reward hodlers the ability to single-side stake their tokens for a set per
 
 Platform-Management
 
-By single-side staking a predetermined amount of platform tokens, a hodler can gain permission to perform the necessary platform actions (functions) required for ongoing management and earn rewards for doing so.
+By single-side staking a predetermined amount of tokens, reward hodlers can gain permission to perform the necessary platform actions (functions) required for ongoing management and earn rewards for doing so.
