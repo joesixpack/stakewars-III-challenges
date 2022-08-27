@@ -4,9 +4,7 @@ Current liquidity mining incentives kickstarted by Compound during the DeFi Summ
 
 Platform-Owned Liquidity
 
-Issue all rewards as discounted bonds (in exchange for LP tokens or stablecoins) -- vesting the rewards over a period of time to prevent arbitration.  To mitigate death spiral issues from self-reinforcing panic selling, the rewards must be allowed to be stakable at a commensurate APY to act as an effective token sink.  Vendor: https://www.olympusdao.finance/pro
-
-This will also eliminate impermanent loss for those providing liquidity.
+Issue all rewards as discounted bonds (in exchange for LP tokens or stablecoins) -- vesting the rewards over a period of time to prevent arbitration.  To mitigate death spiral issues from self-reinforcing panic selling, the rewards must be allowed to be stakable at a commensurate APY to act as an effective token sink.  This will also eliminate impermanent loss for those providing liquidity.
 
 Platform-Governance
 
