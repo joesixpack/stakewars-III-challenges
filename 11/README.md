@@ -17,3 +17,7 @@ Grant reward hodlers the ability to participate in governance voting via vote-lo
 Stability Fund
 
 Grant reward hodlers the ability to single-side stake their tokens for a set period of time to provide insurance against fat-tail shortfall events in return for increased rewards.  A portion of the locked tokens will be liquidated to cover the shortfall event.
+
+Platform-Management
+
+By single-side staking a predetermined amount of platform tokens, a hodler can gain permission to perform the necessary platform actions (functions) required for ongoing management and earn rewards for doing so.
