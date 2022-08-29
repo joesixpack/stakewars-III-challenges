@@ -23,7 +23,7 @@ And then login to the user account with that password.  Now do in order:
 
 1. Edit pool_name in createnode.sh to your-to-be moniker for both the signing wallet & validator pool.
 
-2. Run:
+2. Clone this repository and run:
 
 ```
 ./createnode.sh
