@@ -104,18 +104,29 @@ The node will be full synced when it is no longer downloading headers or blocks 
 
 
 
-Once the node is fully synced, create a signing wallet for NEAR-CLI using the moniker you picked earlier and in this exact format "moniker.shardnet.near" (without quotes) at https://wallet.shardnet.near.org/.  
+Once the node is fully synced, create a signing wallet for NEAR-CLI using the moniker you picked earlier at https://wallet.shardnet.near.org/.  
 
+![image](https://user-images.githubusercontent.com/23145642/188026474-fed90139-181a-4f2a-852b-47ad8f3e9324.png)
 
-
-
-Once that is done the keypair needs to be downloaded to your server via:
+Once that is done, you will need to download the wallet signing keys to your server so NEAR-CLI can access it:
 
 ```
 near login
 ```
 
-Copy the URL given and paste it into your browser.  Grant full access to NEAR-CLI in the resulting popup.  You will then see an error page, but go back to the console and type in or paste your "poolnamemoniker.shardnet.near" (without quotes) signing wallet.
+Copy the URL given and paste it into your browser.  Grant full access to NEAR-CLI in the resulting popup, using the format moniker.shardnet.near which is now your signing wallet.
+
+![image](https://user-images.githubusercontent.com/23145642/188027581-c46d2889-98b5-497c-87ae-062ca0ae268e.png)
+
+You will then see an error page:
+
+![image](https://user-images.githubusercontent.com/23145642/188027810-ba0a9622-af85-4d33-b1c1-4dfe9f82530a.png)
+
+...but now go back to the console and type in or paste your moniker.shardnet.near signing wallet:
+
+![image](https://user-images.githubusercontent.com/23145642/188027322-61a59a0e-8b5d-4b16-bd84-074144660ccc.png)
+
+![image](https://user-images.githubusercontent.com/23145642/188027481-949057b4-9a8b-4d22-9db0-b34d6ffe9c9f.png)
 
 4. Edit AMOUNT in createpool.sh with how much you want to stake initially (ideally, above the next epoch's seat price).  It will cost 30 NEAR to create the pool, plus 
 gas, plus your stake amount.  Then run:
