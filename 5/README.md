@@ -58,10 +58,10 @@ Eventually the SSH session will disconnect (you may have to press enter once or 
 
 Then double click the saved SSH session on the left manu pane to login to the server with the new credentials.  Normally you could just press R in a stopped seassion tab to relogin with the same account.
 
-Once logged into the user account, install nano and wget then download two script files:
+Once logged into the user account, install wget to download two script files:
 
 ```
-sudo apt -y install wget nano
+sudo apt -y install wget
 wget https://raw.githubusercontent.com/joesixpack/stakewars-iii-challenges/main/5/createnode.sh -O createnode.sh
 wget https://raw.githubusercontent.com/joesixpack/stakewars-iii-challenges/main/5/createpool.sh -O createpool.sh
 chmod +x createnode.sh createpool.sh
@@ -75,7 +75,7 @@ Decide on a public moniker to use for your signing wallet and validator pool, th
 ./createnode.sh moniker
 ```
 
-This will compile, install, initialize, autostart and autorun 24/7 a new NEAR node, plus install NEAR-CLI, plus install node monitoring tools (accessible via browser at http://yourserverIP:3000).
+This will compile, install, initialize, autostart and autorun 24/7 a new NEAR node, install NEAR-CLI to interact with the chain, install node monitoring tools (accessible via browser at http://yourserverIP:3000), as well as firewall protection with the necessary ports opened.
 
 3. Once the node is fully synced, create a signing wallet for NEAR-CLI using this exact format "poolnamemoniker.shardnet.near" (without quotes) at https://wallet.shardnet.near.org/.  Once that is done the keypair needs to be downloaded to your server via:
 
