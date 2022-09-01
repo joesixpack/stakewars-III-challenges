@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pool_name=enterwalletandpoolnamemonikerhere
+moniker=$1
 
 #######
 
@@ -20,7 +20,7 @@ echo "export PATH=$PATH:~/.npm-global/bin" >> .profile
 echo "export NEAR_ENV=shardnet" >> .profile
 echo "export NEAR_CLI_SHARDNET_RPC_SERVER_URL=http://127.0.0.1:3030" >> .profile
 echo "export NEAR_GAS=30000000000000" >> .profile
-echo "export NEAR_NAME=$pool_name" >> .profile
+echo "export NEAR_NAME=$moniker" >> .profile
 echo 'export NEAR_WALLET=$NEAR_NAME.shardnet.near' >> .profile
 echo 'export NEAR_POOL=$NEAR_NAME.factory.shardnet.near' >> .profile
 source ~/.profile
