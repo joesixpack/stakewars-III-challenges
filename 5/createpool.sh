@@ -1,6 +1,6 @@
 #!/bin/bash
 
-AMOUNT=100
+AMOUNT=$(echo "$1-30" | bc )
 
 #####
 
