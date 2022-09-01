@@ -126,13 +126,10 @@ You will then see an error page:
 
 ![image](https://user-images.githubusercontent.com/23145642/188027322-61a59a0e-8b5d-4b16-bd84-074144660ccc.png)
 
-
-
-4. Edit AMOUNT in createpool.sh with how much you want to stake initially (ideally, above the next epoch's seat price).  It will cost 30 NEAR to create the pool, plus 
-gas, plus your stake amount.  Then run:
+And now for the very last step!  To create your validator pool, it will cost 30 NEAR as a storage reserve to create the pool, plus gas, plus your initial stake amount.  Depending on how much you NEAR have in the signing wallet after creation (usually 50) and/or received from frens, 40 is a good minimum initial amount to leave enough gas for future transactions.
 
 ```
-./createpool.sh
+./createpool.sh amount
 ```
 
 Once that is done, you're good to go!
