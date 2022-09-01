@@ -64,13 +64,13 @@ sudo systemctl enable neard
 FILE=~/$NEAR_POOL.tar.zstd
 if [ -f $FILE ]; then
         cd ~/.near
-        tar xvf ~/$NEAR_POOL.tar.zstd
+        tar xvf ~/$NEAR_POOL.tar.gz
 else
         cd ~/.near
         near generate-key $NEAR_POOL
         cp ~/.near-credentials/shardnet/$NEAR_POOL.json ~/.near/validator_key.json
         sed -i 's/private_key/secret_key/g' ~/.near/validator_key.json
-        tar caf ~/$NEAR_POOL.tar.zstd *key*.json
+        tar caf ~/$NEAR_POOL.tar.gz *key*.json
 fi
 
 cd ~
