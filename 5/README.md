@@ -1,4 +1,4 @@
-QUICK & EASY VALIDATOR NODE INSTALLATION GUIDE FOR HETZNER
+QUICK & EASY NODE & VALIDATOR INSTALLATION GUIDE FOR HETZNER
 
 Head over to the AMD Ryzen dedicated server page at https://www.hetzner.com/dedicated-rootserver/matrix-ax and order the AX41 dedicated server:
 
