@@ -38,7 +38,7 @@ make shardnet-release
 rm -rf ~/.near/
 ./target/release/neard --home ~/.near init --chain-id shardnet --download-genesis --download-config
 
-sudo echo "[Unit]
+echo "[Unit]
 Description=NEARd Daemon Service
 
 [Service]
@@ -55,7 +55,7 @@ TimeoutStopSec=45
 KillMode=mixed
 
 [Install]
-WantedBy=multi-user.target" > /etc/systemd/system/neard.service
+WantedBy=multi-user.target" > sudo tee /etc/systemd/system/neard.service
 sudo systemctl daemon-reload
 sudo systemctl enable neard
 
