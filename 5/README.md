@@ -126,7 +126,7 @@ You will then see an error page:
 
 ![image](https://user-images.githubusercontent.com/23145642/188027322-61a59a0e-8b5d-4b16-bd84-074144660ccc.png)
 
-![image](https://user-images.githubusercontent.com/23145642/188027481-949057b4-9a8b-4d22-9db0-b34d6ffe9c9f.png)
+
 
 4. Edit AMOUNT in createpool.sh with how much you want to stake initially (ideally, above the next epoch's seat price).  It will cost 30 NEAR to create the pool, plus 
 gas, plus your stake amount.  Then run:
