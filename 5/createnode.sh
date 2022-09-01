@@ -8,7 +8,7 @@ cd ~
 
 source ~/.profile
 
-sudo apt install -y bc jq ufw npm build-essential make git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ python3 docker-ce protobuf-compiler libssl-dev pkg-config llvm clang python3-pip
+sudo apt install -y ufw build-essential make git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ python3 protobuf-compiler libssl-dev pkg-config llvm clang
 sudo apt purge -y cargo* rust* nodejs npm
 
 sudo ufw allow 24567
@@ -33,12 +33,10 @@ git clone https://github.com/near/nearcore
 cd nearcore
 git fetch --tags --force
 git checkout shardnet
-cargo build -p neard --release --features shardnet
+make shardnet-release
 
 rm -rf ~/.near/
-./target/release/neard --home ~/.near init --chain-id shardnet --download-genesis
-
-wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/config.json
+./target/release/neard --home ~/.near init --chain-id shardnet --download-genesis --download-config
 
 sudo echo "[Unit]
 Description=NEARd Daemon Service
