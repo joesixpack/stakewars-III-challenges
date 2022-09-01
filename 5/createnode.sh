@@ -83,6 +83,7 @@ sudo chmod 644 /usr/share/keyrings/nodesource.gpg
 sudo apt -y update
 sudo apt install -y nodejs
 
+echo "prefix=~/.npm-global" >> ~/.npmrc
 npm -g install near-cli
 
 sudo systemctl start neard
