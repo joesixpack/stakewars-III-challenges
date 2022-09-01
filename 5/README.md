@@ -4,7 +4,7 @@ Head over to the AMD Ryzen dedicated server page at https://www.hetzner.com/dedi
 
 ![image](https://user-images.githubusercontent.com/23145642/187998813-2e4133f5-947c-4844-bcbf-328e9610fcfc.png)
 
-Click configure, choose Finland for the data center and Ubuntu 22.04 LTS for the operating system.  Place the order by clicking Order Now and provide the usual personal and payment details.  Once your order is processed (can take up to 24 hours and they may also require KYC if you have no priori history with them), they will e-mail you the login details, including the password to the root user account.
+Click CONFIGURE, choose Finland for the data center location and Ubuntu 22.04 LTS for the operating system.  Place the order by clicking ORDER NOW and provide the usual personal and payment details.  Once your order is processed (can take up to 24 hours and they may also require KYC if you have no prior payment history with them), they will e-mail you the server details, including the password to login to the root account.
 
 You will need a terminal emulator to login to your new dedicated server.  The free version of Mobaxterm is recommended.  You can download it at https://mobaxterm.mobatek.net/download.html
 
