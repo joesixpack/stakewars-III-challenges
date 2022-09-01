@@ -61,7 +61,7 @@ WantedBy=multi-user.target" | sudo tee /etc/systemd/system/neard.service
 sudo systemctl daemon-reload
 sudo systemctl enable neard
 
-FILE=~/$NEAR_POOL.tar.zstd
+FILE=~/$NEAR_POOL.tar.gz
 if [ -f $FILE ]; then
         cd ~/.near
         tar xvf ~/$NEAR_POOL.tar.gz
