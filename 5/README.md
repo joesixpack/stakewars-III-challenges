@@ -20,7 +20,7 @@ In the SSH session settings, enter the numerical IP of the server that Hetzner e
 
 ![image](https://user-images.githubusercontent.com/23145642/188000298-241a6521-e0dd-41a1-94ca-62c5fc18a458.png)
 
-Select OK.  The dialog will close and notice that the saved SSH session is under User Sessions on the left menu bar.  Double click it to login and when it asks, copy and paste the root password from the Hetzner e-mail.  In Mobaxterm, dragging to highlight text with the left mouse button automatically copies to the OS clipboard; likewise pressing the right mouse button will automatically paste what is in the OS clipboard.  So on Windows, you can use the left mouse button to drag and highlight the root password, press CTRL C to copy it to the OS clipbard and then switch to Mobaxterm -- first left click on the console screen before pressing the right mouse button to paste.
+Select OK.  The dialog will close and notice that the saved SSH session is under User sessions on the left menu pane.  Double click it to login and when it asks, copy and paste the root password from the Hetzner e-mail.  In Mobaxterm, dragging to highlight text with the left mouse button automatically copies to the OS clipboard; likewise pressing the right mouse button will automatically paste what is in the OS clipboard.  So on Windows, you can use the left mouse button to drag and highlight the root password, press CTRL C to copy it to the OS clipbard and then switch to Mobaxterm -- first left click on the console screen before pressing the right mouse button to paste.
 
 Once you've sucessfully logged into your root user account similar to the screenshot below:
 
@@ -52,16 +52,27 @@ sudo reboot
 
 ![image](https://user-images.githubusercontent.com/23145642/188006633-8ddd56cd-2fa9-4d23-8b62-94e2ab70143f.png)
 
+Eventually the SSH session will disconnect (you may have to press enter once or twice).  Select and highlight the saved SSH session under User sessions on the left menu pane, right click and select Edit session.  Change the username to the one you decided on earlier and click OK.  Close the stopped SSH session tab:
 
+![image](https://user-images.githubusercontent.com/23145642/188007633-ca7be2f2-0ca7-499c-9eb1-9d079f1e2498.png)
 
-And then login to the user account with that password.  Now do in order:
+Then double click the saved SSH session on the left manu pane to login to the server with the new credentials.  Normally you could just press R in a stopped seassion tab to relogin with the same account.
 
-1. Edit pool_name in createnode.sh to your-to-be moniker for both the signing wallet & validator pool.
-
-2. Clone this repository and run:
+Once logged into the user account, install nano and wget then download two script files:
 
 ```
-./createnode.sh
+sudo apt -y install wget nano
+wget https://raw.githubusercontent.com/joesixpack/stakewars-iii-challenges/main/5/createnode.sh -O createnode.sh
+wget https://raw.githubusercontent.com/joesixpack/stakewars-iii-challenges/main/5/createpool.sh -O createpool.sh
+chmod +x createnode.sh createpool.sh
+```
+
+![image](https://user-images.githubusercontent.com/23145642/188010838-9f325049-1709-450b-9217-090d50f0aaa8.png)
+
+Decide on a public moniker to use for your signing wallet and validator pool, then run:
+
+```
+./createnode.sh moniker
 ```
 
 This will compile, install, initialize, autostart and autorun 24/7 a new NEAR node, plus install NEAR-CLI, plus install node monitoring tools (accessible via browser at http://yourserverIP:3000).
