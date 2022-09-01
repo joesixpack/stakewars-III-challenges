@@ -132,7 +132,7 @@ And now for the very last step!  To create your validator pool, it will cost 30 
 ./createpool.sh amount
 ```
 
-This will takea couple of minutes.  Once that is done, you're good to go!  Your critical information:
+This will take a couple of minutes.  Once that is done, you're good to go!  Your critical information:
 
 ```
 Signing Wallet (aka Account ID): moniker.shardnet.near
