@@ -11,6 +11,7 @@ source ~/.profile
 sudo apt install -y ufw build-essential make git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ python3 protobuf-compiler libssl-dev pkg-config llvm clang
 sudo apt purge -y cargo* rust* nodejs npm
 
+sudo ufw enable
 sudo ufw allow 24567
 sudo ufw allow 3030
 sudo ufw limit 22
