@@ -22,7 +22,7 @@ In the SSH session settings, enter the numerical IP of the server that Hetzner e
 
 Select OK.  The dialog will close and notice that the saved SSH session is under User sessions on the left menu pane.  Double click it to login and when it asks, copy and paste the root password from the Hetzner e-mail.  In Mobaxterm, dragging to highlight text with the left mouse button automatically copies to the OS clipboard; likewise pressing the right mouse button will automatically paste what is in the OS clipboard.  So on Windows, you can use the left mouse button to drag and highlight the root password, press CTRL C to copy it to the OS clipbard and then switch to Mobaxterm -- first left click on the console screen before pressing the right mouse button to paste.
 
-Once you've sucessfully logged into your root user account similar to the screenshot below:
+Once you've sucessfully logged into your root account similar to the screenshot below:
 
 ![image](https://user-images.githubusercontent.com/23145642/188002670-c6147248-daef-4ce3-a4cc-33117030dbb0.png)
 
@@ -132,9 +132,16 @@ And now for the very last step!  To create your validator pool, it will cost 30 
 ./createpool.sh amount
 ```
 
-Once that is done, you're good to go!  Your information:
+Once that is done, you're good to go!  Your critical information:
 
 ```
-Signing Wallet: moniker.shardnet.near
-Validator Pool: moniker.factory.shardnet.near
+Signing Wallet (aka Account ID): moniker.shardnet.near
+Validator Pool ID: moniker.factory.shardnet.near
+
+Location of Node & Validator Keys: ~/.near/
+Location of Node & Validator Keys Backup: ~/moniker.factory.shardnet.near.tar.gz
+
+Location of Signing Wallet Key: ~/.near-credentials/shardnet/moniker.shardnet.near
 ```
+
+~ means the top level of the user account directory and also a shortcut for $HOME which points to the same thing.
