@@ -13,6 +13,7 @@ sudo apt purge -y cargo* rust* nodejs npm
 
 sudo ufw allow 24567
 sudo ufw allow 3030
+sudo ufw limit 22
 
 echo "USER_BASE_BIN=$(python3 -m site --user-base)/bin" >> .profile
 echo 'export PATH="$USER_BASE_BIN:$PATH"' >> .profile
