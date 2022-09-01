@@ -55,7 +55,7 @@ TimeoutStopSec=45
 KillMode=mixed
 
 [Install]
-WantedBy=multi-user.target" > sudo tee /etc/systemd/system/neard.service
+WantedBy=multi-user.target" | sudo tee /etc/systemd/system/neard.service
 sudo systemctl daemon-reload
 sudo systemctl enable neard
 
