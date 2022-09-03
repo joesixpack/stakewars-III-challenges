@@ -1,3 +1,5 @@
+HIGH AVAILABILITY NEAR FAILOVER CLUSTER WITH KUUTAMOD
+
 Kuutamod is an interesting "watcher" that takes care of automatic failover for NEAR nodes in case of any kind of failure.  It uses a pool of validators, with one validator being designated active and the other validators being designated passive which are always synced to the chain.  When a failover needs to occur, a passive validator will turn into an activate validator and be restarted with the correct keys.  Pretty cool.
 
 LOCALNET
