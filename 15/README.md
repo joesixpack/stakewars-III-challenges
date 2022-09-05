@@ -19,8 +19,8 @@ After having no luck with the manual installation of NixOS from another Linux di
 
 But wait!  This challenge actaully wants proof of running on NixOS, not just kuutamod per se.  Back to the drawing board.  So I decided to try a nix-infect-compatible VPS with extra block storage and hope its fast enough.  Bingo, NixOs installed successfully!  Unfortunately, there's a hash mismatch in one of the kuutamod dependencies and it just won't install.  I don't have the skill set with NixOS to figure out how to fix it.  Opened an issue at: https://github.com/kuutamolabs/kuutamod/issues/194
 
-Until the issue is resolved, no further updates to this blog are expected.  It would be quite trivial past that point to get the kuutamod and counsel up and running as it was on localnet...
-
 ![image](https://user-images.githubusercontent.com/23145642/188491763-e7b6dce5-7ade-4b75-9c14-0ecd93fb2812.png)
+
+Until the issue is resolved, no further updates to this blog are expected.  It would be quite trivial past that point to get the kuutamod and counsel up and running as it was on localnet...
 
 ![image](https://user-images.githubusercontent.com/23145642/188492222-18a8e141-d127-4251-b2bb-2d18ffb66c79.png)
