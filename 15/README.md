@@ -22,3 +22,5 @@ But wait!  This challenge actaully wants proof of running on NixOS, not just kuu
 Until the issue is resolved, no further updates to this blog are expected.  It would be quite trivial past that point to get the kuutamod and counsel up and running as it was on localnet...
 
 ![image](https://user-images.githubusercontent.com/23145642/188491763-e7b6dce5-7ade-4b75-9c14-0ecd93fb2812.png)
+
+![image](https://user-images.githubusercontent.com/23145642/188492222-18a8e141-d127-4251-b2bb-2d18ffb66c79.png)
