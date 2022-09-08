@@ -26,3 +26,8 @@ Until the issue is resolved, no further updates to this blog are expected.  It w
 ![image](https://user-images.githubusercontent.com/23145642/188492222-18a8e141-d127-4251-b2bb-2d18ffb66c79.png)
 
 UPDATE: Figured out the problem was with the NixOS binary package cache, so got it resolved and successfully installed and configured everything.  But the block storage was just too slooowow to let the neard sync (it didn't even begin to download blocks), so gave it one more attempt with EC2 spot instances with an hourly rate cap.  Downloaded snapshot, created keys, upgraded kuutamod, synced the headers, but...  it won't sync any blocks past what is in the snapshot.  Repeated this at least a handful a times with no progress.  Calling it a day.
+
+FINAL UPDATE: Turns out the 11AM snapshot the previous day seems to have been bad, especially as the 11PM wasn't generated, but the next day's 100% works to state sync and download blocks.  So, getting on with it, snapshotted the main NixOS/Kuutamod installation, replicated it to a spot fleet and this on all three:
+
+![screenshot_2022_09_08_at_15_54_06](https://user-images.githubusercontent.com/23145642/189239910-2725d7af-23a9-4fdb-b43d-6f8fd84cb1cc.png)
+
